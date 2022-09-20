@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column; align-items: stretch; justify-content: flex-end;">
+        <ui:VisualElement style="flex-basis: auto; flex-direction: column; width: 50%;">
+            <ui:Button text="Fight" display-tooltip-when-elided="true" name="Fight" />
+            <ui:ProgressBar name="TurnProgress" />
+            <ui:Button text="Pass Turn" display-tooltip-when-elided="true" name="Pass" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
