@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FightScene.unity
     guid: d19ef3c774c98bc4d928f438561f7720
   - enabled: 1
-    path: Assets/Scenes/KristoferTestScene.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 6bf7c055990072844a134ff8e8fce707
   m_configObjects: {}

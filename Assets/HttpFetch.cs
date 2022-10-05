@@ -72,7 +72,7 @@ public class HttpFetch : MonoBehaviour
     {
         if (doFetch)
         {
-            // StartCoroutine(Fetch("http://127.0.0.1:8125/position/" + id.name));
+            //StartCoroutine(Fetch("http://127.0.0.1:8125/positions/" + id.name));
             doFetch = false;
         }
     }

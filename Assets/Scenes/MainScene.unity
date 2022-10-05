@@ -223,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &53160913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &202510422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,7 +460,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.2
+  orthographic size: 8.869295
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2674,7 +2674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doFetch: 0
-  id: {fileID: 0}
+  id: {fileID: 1414308840}
 --- !u!4 &543727712
 Transform:
   m_ObjectHideFlags: 0
@@ -2874,7 +2874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1036090461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3362,7 +3362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1242532523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3622,7 +3622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1399007582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3735,7 +3735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bdafa62ba341d41be2b38b3d3e40a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: saikyun
+  name: viktor
 --- !u!114 &1414308841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3750,6 +3750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRefreshing: 0
   id: {fileID: 1414308840}
+  player: {fileID: 1414308836}
 --- !u!1 &1743419014
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,7 +5237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1826260421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5251,6 +5252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRefreshing: 0
   id: {fileID: 1826260422}
+  player: {fileID: 0}
 --- !u!114 &1826260422
 MonoBehaviour:
   m_ObjectHideFlags: 0

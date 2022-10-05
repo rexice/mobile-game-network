@@ -7,6 +7,8 @@ public class ControlCharacter : MonoBehaviour, HasPosition
 {
     public Tilemap map;
 
+    //public HttpFetch fetch;
+
     public bool isMoving;
     public Vector3Int targetCell;
     public Vector3Int currentCell;
@@ -45,7 +47,7 @@ public class ControlCharacter : MonoBehaviour, HasPosition
         transform.position = map.WorldToCell(pos);
     }
 
-    struct MovementData
+    public struct MovementData
     {
         public Vector3 direction;
         public Vector3 current_pos;
@@ -58,7 +60,7 @@ public class ControlCharacter : MonoBehaviour, HasPosition
 
         while (map.WorldToCell(transform.position) != targetCell)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(1f);
 
             var curpos = map.WorldToCell(transform.position);
 

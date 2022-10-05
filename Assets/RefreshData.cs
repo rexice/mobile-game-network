@@ -6,16 +6,13 @@ public class RefreshData : MonoBehaviour
 {
     public bool isRefreshing;
     public NetworkID id;
-    public HasPosition pos;
+    public ControlCharacter player;
 
     void Init()
     {
-        // TODO: disable when building for real
-        Application.runInBackground = true;
-
         isRefreshing = false;
         id = GetComponent<NetworkID>();
-        pos = GetComponent<HasPosition>();
+        player = GetComponent<ControlCharacter>();
     }
 
     void Start()
@@ -35,7 +32,7 @@ public class RefreshData : MonoBehaviour
     public void GotData(string jsonData)
     {
         var newpos = JsonUtility.FromJson<Vector3>(jsonData);
-        pos.SetPos(newpos);
+        player.SetPos(newpos);
     }
 
     IEnumerator Refresh()
@@ -44,11 +41,11 @@ public class RefreshData : MonoBehaviour
 
         while (true)
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(1f);
 
-            Debug.Log("asking position for " + id.name);
+            //Debug.Log("asking position for " + id.name);
 
-            HttpFetch.Get("http://127.0.0.1:8125/position/" + id.name, this);
+            HttpFetch.Get("http://127.0.0.1:8125/positions/" + id.name, this);
         }
 
         isRefreshing = false;
