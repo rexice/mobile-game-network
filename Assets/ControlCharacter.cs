@@ -60,7 +60,7 @@ public class ControlCharacter : MonoBehaviour, HasPosition
 
         while (map.WorldToCell(transform.position) != targetCell)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
 
             var curpos = map.WorldToCell(transform.position);
 
@@ -86,6 +86,7 @@ public class ControlCharacter : MonoBehaviour, HasPosition
             var movement = new MovementData();
             movement.direction = direction;
             movement.current_pos = new Vector3(curpos.x, curpos.y, curpos.z);
+            //movement.current_pos = map.WorldToCell(Input.mousePosition);
             nextPos = movement.current_pos + movement.direction;
 
             var json = JsonUtility.ToJson(movement);
